@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>簡単なwebサーバー</title>
+</head>
+<body>
+こんにちは！
+{{if .}}
+    {{.}}さん
+{{else}}
+すみません、どちら様ですか?
+{{end}}
+
+<form action="/" name=f method="GET">
+    <input size=40 name=yourname value="" title="名前を入力してください:">
+    <input type=submit value="送信">
+</form>
+</body>
+</html>
